@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* 共通の記載 */
+h1 {
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 80px 0 0;
+}
+
+h2 {
+    font-size: 16px;
+    /* font-weight: 300; */
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 17px auto 60px;
+}
+
+a:hover {
+    /* マウスをホバーしたときに透過させる */
+    opacity: 0.5;
+}
+
+
+
+/* メイン */
+main {
+    padding-top: 77px;
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        padding-top: 49px;
+    }
+}
+
+/* ワークス */
+.works {
+    padding-bottom: 100px;
+    background-color: #fff;
+}
+
+.works_w {
+    color: #fad2c3;
+    font-weight: 700;
+}
+
+h3 {
+    max-width: 1000px;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    padding: 2.5px 0 2.5px 15px;
+    margin: 0 auto 30px;
+    border-left: 15px solid #fad2c3;
+    box-sizing: border-box;
+}
+
+.works ul {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.works ul li {
+    width: 318px;
+    margin-bottom: 23px;
+}
+
+@media screen and (max-width: 767px) {
+    h3 {
+        margin: 0 auto 30px 23px;
+    }
+    .works ul {
+        padding: 0 23px;
+    }
+    .works ul li {
+        width: calc(50% - 10px);
+    }
+}
+@media screen and (max-width: 767px) {
+    .works {
+        padding-bottom: 70px;
+    }
+    h3 {
+        max-width: 340px;
+        margin: 0 auto 30px;
+    }
+    .works ul {
+        padding: 0;
+    }
+    .works ul li {
+        width: 340px;
+        margin: 0 auto 30px;
+    }
+}
+
+/* コンタクト */
+.contact_c {
+    color: #f9c0af;
+    font-weight: 700;
+}
+
+.contact_top {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact_btn {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.contact_btn a {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    box-sizing: border-box;
+    border: 1px solid rgba(111, 93, 70, 0.5);
+    background: #fad2c3;
+    padding: 17px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .contact {
+        padding: 0 17.5px;
+        margin: 0 auto;
+    }
+    .contact_top {
+        line-height: 1.75;
+    }
+}
+
+

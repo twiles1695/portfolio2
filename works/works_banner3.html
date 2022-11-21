@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rena design_Works</title>
+    <meta name="description" content="大阪府在住のWebデザイナーのポートフォリオサイトです。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">            
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style-works_banner3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="header_logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="Rena design"></a>
+        </div>
+        <nav class="pc_nav">
+            <ul>
+                <li><a href="../index.html#service">Service</a></li>
+                <li><a href="index.html">Works</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../index.html" target="_blank">Blog</a>
+                </li>
+            </ul>
+            <div class="snsicon">
+                <ul>
+                    <li><a href="https://twitter.com/home?lang=ja" target="_blank"><img src="../images/twittericon.png"
+                                alt="twitterアイコン"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/instagramicon.png"
+                                alt="instaアイコン"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="sp_btn"><span></span></div>
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="../index.html#header">Top</a></li>
+                <li><a href="../index.html#service">Service</a></li>
+                <li><a href="index.html">Works</a>
+                </li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../index.html" target="_blank">Blog</a>
+                </li>
+            </ul>
+            <div class="sp_snsicon">
+                <ul>
+                    <li><a href="https://twitter.com/home?lang=ja" target="_blank"><img src="../images/twittericon.png"
+                                alt="twitterアイコン"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/instagramicon.png"
+                                alt="instaアイコン"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="works" class="works">
+            <h1><span class="works_w">W</span>orks</h1>
+            <h2>制作したもの</h2>
+            <div class="works_img"><img src="../images/banner3.jpg" alt="不動産セミナーの広告バナー"></div>
+            <h3>不動産セミナーの広告バナー</h3>
+            <div class="works_content">
+                <div class="outline">
+                    <h4>概要</h4>
+                    <ul>
+                        <li>カテゴリ<span class="category">バナー</span></li>
+                        <li>担当範囲<span class="category">デザイン</span></li>
+                        <li>製作期間<span class="category">3日間</span></li>
+                        <li>使用ツール<span class="tool">Photoshop</span></li>
+                    </ul>
+                </div>
+                <div class="point">
+                    <h4>制作のポイント</h4>
+                    <p class="point_text">
+                        不動産競売セミナーの広告バナーをデザインしました。<br>不動産業界を連想させる写真を採用し、彩度を落とすことで文字とコントラストをつけました。
+                    </p>
+                </div>
+            </div>
+            <div class="works_btn">
+                <a href="index.html">一覧を見る</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h1><span class="contact_c">C</span>ontact</h1>
+            <h2>お問い合わせ</h2>
+            <p class="contact_top">お仕事のご相談やご依頼など、こちらからお気軽にお問合せください。</p>
+            <div class="contact_btn">
+                <a href="../index.html#contact">お問い合わせはこちら</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_snsicon">
+            <ul>
+                <li><a href="https://twitter.com/home?lang=ja" target="_blank"><img src="../images/twittericon.png"
+                            alt="twitterアイコン"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/instagramicon.png"
+                            alt="instaアイコン"></a></li>
+            </ul>
+        </div>
+        <p><small>© Rena design</small></p>
+    </footer>
+
+    <script>
+        $(function () {
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_nav').toggleClass('is-show');
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+    </script>
+
+</body>
+
+</html>

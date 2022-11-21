@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+body {
+    background-color: #fff;
+}
+
+header {
+    background-color: #fff;
+}
+
+/* 共通の記載 */
+h2 {
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 80px 0 0;
+}
+
+h3 {
+    font-size: 16px;
+    /* font-weight: 300; */
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 17px auto 60px;
+}
+
+.service_s,
+.about_a,
+.contact_c {
+    color: #fad2c3;
+    font-weight: 700;
+}
+
+a:hover {
+    /* マウスをホバーしたときに透過させる */
+    opacity: 0.5;
+}
+
+/* メイン */
+/* ファーストビュー */
+main {
+    padding-top: 77px;
+}
+
+.pc_lead {
+    position: relative;
+}
+
+.pc_lead h1 {
+    position: absolute;
+    top: 43.4%;
+    left: 183px;
+    width: 41.4%;
+}
+
+@media screen and (min-width: 767px) {
+    .sp_lead {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        padding-top: 49px;
+    }
+    .pc_lead {
+        display: none;
+    }
+    .sp_lead {
+        position: relative;
+    }
+    .sp_lead h1 {
+        position: absolute;
+        top: 41%;
+        left: 16%;
+        width: 66.7%;
+    }
+}
+
+/* サービス */
+.service {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.service_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_content {
+    width: 29%;
+}
+/* ★なぜp以外が29%にならないかわからない */
+
+h4 {
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin: 30px 0 20px;
+}
+
+.service_block p {
+    /* width: 290px; */
+    line-height: 1.625;
+    text-align: justify;
+}
+
+.graphic {
+    width: 183px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.web {
+    width: 160px;
+    margin: 0 auto;
+}
+
+.coding {
+    width: 127px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .service {
+        max-width: 340px;
+    }
+    .service_block {
+        display: block;
+    }
+    .service_content {
+        width: 100%;
+    }
+    .service_block p {
+        width: 290px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+    }
+}
+
+/* ワークス */
+.works {
+    background-color: #ece4e1;
+    margin: 100px auto 0;
+}
+
+.works_w {
+    color: #f9c0af;
+    font-weight: 700;
+}
+
+.works ul {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.works ul li {
+    width: 318px;
+    margin-bottom: 23px;
+}
+
+.works_btn {
+    width: 250px;
+    padding: 7px 0 80px;
+    margin: 0 auto;
+}
+
+.works_btn a {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    box-sizing: border-box;
+    border: 1px solid rgba(111, 93, 70, 0.5);
+    background: #fad2c3;
+    padding: 17px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .works ul {
+        padding: 0 23px;
+    }
+    .works ul li {
+        width: calc(50% - 10px);
+    }
+}
+@media screen and (max-width: 767px) {
+    .works {
+        margin-top: 40px;
+    }
+    /* .works ul {
+        display: block;
+    } */
+    .works ul li {
+        width: 318px;
+        margin: 0 auto 30px;
+    }
+}
+
+/* アバウト */
+.about {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+}
+
+.self {
+    max-width: 480px;
+    padding: 50px 160px 100px;
+    margin: 0 auto;
+    background-color: #ece4e1;
+}
+.self p {
+    line-height: 1.75;
+    text-align: justify;
+}
+
+.bottom_space {
+    margin-bottom: 30px;
+}
+
+.illust {
+    width: 250px;
+    position: absolute;
+    top: 415px;
+    left: 0;
+}
+
+.skill {
+    width: 160px;
+    padding: 40px 120px;
+    position: absolute;
+    top: 545px;
+    right: 0;
+    border-radius: 40px;
+    background: rgba(250, 210, 195, 0.7);
+}
+
+h5 {
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding-bottom: 12px;
+}
+
+.skill p {
+    line-height: 1.75;
+}
+
+@media screen and (max-width: 767px) {
+    .self {
+        padding: 50px 80px 120px;
+    }
+    .illust {
+        width: 200px;
+        top: 100px;
+        right: 50px;
+        left: auto;
+    }
+    .skill {
+        position: initial;
+        margin: -100px auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .self {
+        max-width: 300px;
+        padding: 135px 20px 40px;
+        margin-top: 145px;
+        /* padding: 115px 20px 100px;
+        margin-top: 150px; */
+    }
+    .illust {
+        width: 170px;
+        top: 209px;
+        left: 50%;
+        transform: translate(-50%);
+        /* position: initial;
+        position: absolute;
+        top: 200px;
+        left: 25%; */
+    }
+    .skill {
+        width: 280px;
+        padding: 25px 30px;
+        margin: 30px auto 0;
+    }
+    .skill p {
+        width: 160px;
+        margin: 0 auto;
+    }
+}
+
+/* コンタクト */
+.contact {
+    margin: 200px auto 0;
+    background: linear-gradient(to bottom, #fff, #ece4e1);
+}
+
+.contact_top {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact_text {
+    line-height: 1.75;
+    text-align: center;
+}
+.contact ul {
+    width: 450px;
+    margin: 40px auto 60px;
+    list-style: square;
+}
+
+.contact ul li {
+    padding: 7px 0;
+}
+
+.contact_btn {
+    width: 250px;
+    margin: 30px auto 0;
+}
+
+@media screen and (max-width: 767px) {
+    .contact {
+        padding: 0 17.5px;
+        margin: 100px auto 0;
+    }
+    .contact_top {
+        line-height: 1.75;
+    }
+    .contact_text {
+        line-height: 1.75;
+        text-align: justify;
+    }
+    .contact_text br {
+        display: none;
+    }
+    .contact ul {
+        max-width: 340px;
+        margin: 40px 17.5px 60px;
+    }
+    .contact ul li {
+        width: 340px;
+        line-height: 1.5;
+    }
+}
+
+/* フォーム */
+form {
+    /* max-width: 1000px; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+label {
+    width: 600px;
+    margin: 0 auto;
+}
+
+input {
+    width: 600px;
+    /* height: 30px; */
+    padding: 10px;
+    margin: 15px auto 30px;
+    /* border: 1px solid #6f5d46; */
+    border: none;
+    background-color: #fff;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+textarea {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    margin: 15px auto 30px;
+    /* border: 1px solid #6f5d46; */
+    border: none;
+    box-sizing: border-box;
+}
+
+button {
+    width: 250px;
+    margin: 0 auto;
+    padding: 17px 0;
+    font-size: 15px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #6f5d46;
+    letter-spacing: 0.1em;
+    box-sizing: border-box;
+    border: 1px solid rgba(111, 93, 70, 0.5);
+    background: #fad2c3;
+    text-align: center;
+    cursor: pointer;
+}
+form a {
+    padding: 17px 0;
+}
+
+@media screen and (max-width: 767px) {
+    label,
+    input,
+    textarea {
+        width: 340px;
+    }
+}
+

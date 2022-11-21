@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rena design_Works</title>
+    <meta name="description" content="大阪府在住のWebデザイナーのポートフォリオサイトです。">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../android-chrome-192x192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">            
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style-works.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="header_logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="Rena design"></a>
+        </div>
+        <nav class="pc_nav">
+            <ul>
+                <li><a href="../index.html#service">Service</a></li>
+                <li><a href="index.html">Works</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../index.html" target="_blank">Blog</a>
+                </li>
+            </ul>
+            <div class="snsicon">
+                <ul>
+                    <li><a href="https://twitter.com/home?lang=ja" target="_blank"><img src="../images/twittericon.png"
+                                alt="twitterアイコン"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/instagramicon.png"
+                                alt="instaアイコン"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="sp_btn"><span></span></div>
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="../index.html#header">Top</a></li>
+                <li><a href="../index.html#service">Service</a></li>
+                <li><a href="index.html">Works</a>
+                </li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../index.html" target="_blank">Blog</a>
+                </li>
+            </ul>
+            <div class="sp_snsicon">
+                <ul>
+                    <li><a href="https://twitter.com/home?lang=ja" target="_blank"><img src="../images/twittericon.png"
+                                alt="twitterアイコン"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/instagramicon.png"
+                                alt="instaアイコン"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="works" class="works">
+            <h1><span class="works_w">W</span>orks</h1>
+            <h2>制作したもの</h2>
+            <h3>Web design</h3>
+            <ul>
+                <li><a href="works_banner1.html"><img src="../images/banner1.png" alt="バナー1"></a>
+                </li>
+                <li><a href="works_peoplegood.html"><img src="../images/peoplegoodmock.png" alt="peoplegood"></a>
+                </li>
+                <li><a href="works_banner2.html"><img src="../images/banner2.png" alt="banner2"></a>
+                </li>
+                <li><a href="works_hairsalonhp.html"><img src="../images/hairsalonmock.png" alt="ヘアサロンHP"></a>
+                </li>
+                <li><a href="works_banner3.html"><img src="../images/banner3.png" alt="banner3"></a>
+                </li>
+                <li><a href="works_designcafe.html"><img src="../images/designcafemock.png" alt="designcafe"></a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h1><span class="contact_c">C</span>ontact</h1>
+            <h2>お問い合わせ</h2>
+            <p class="contact_top">お仕事のご相談やご依頼など、こちらからお気軽にお問合せください。</p>
+            <div class="contact_btn">
+                <a href="../index.html#contact">お問い合わせはこちら</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_snsicon">
+            <ul>
+                <li><a href="https://twitter.com/home?lang=ja" target="_blank"><img src="../images/twittericon.png"
+                            alt="twitterアイコン"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/instagramicon.png"
+                            alt="instaアイコン"></a></li>
+            </ul>
+        </div>
+        <p><small>© Rena design</small></p>
+    </footer>
+
+    <script>
+        $(function () {
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_nav').toggleClass('is-show');
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+    </script>
+
+</body>
+
+</html>
